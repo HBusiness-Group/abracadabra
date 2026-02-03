@@ -1,0 +1,156 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <meta name="theme-color" content="#0b1020" />
+
+  <title>Abracadabra — Serviços digitais que funcionam como mágica</title>
+  <meta name="description" content="A Abracadabra oferece serviços digitais automatizados: automações web, páginas rápidas e ferramentas SaaS simples para escalar sem complicação." />
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="Abracadabra — Serviços digitais que funcionam como mágica" />
+  <meta property="og:description" content="Automação, SaaS e serviços digitais para ganhar tempo e escalar com simplicidade." />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://abracadabra.srv.br/" />
+  <meta property="og:image" content="/assets/og.png" />
+
+  <!-- Twitter -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:image" content="/assets/og.png" />
+
+  <!-- Favicons -->
+  <link rel="icon" href="/assets/favicon.png" />
+  <link rel="apple-touch-icon" href="/assets/apple-touch-icon.png" />
+
+  <style>
+    body{
+      margin:0;
+      font-family: system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
+      background: linear-gradient(180deg,#060914,#0b1020);
+      color:#fff;
+    }
+    a{color:inherit;text-decoration:none}
+    .wrap{max-width:1100px;margin:auto;padding:0 20px}
+    header{padding:20px 0;border-bottom:1px solid rgba(255,255,255,.08)}
+    .nav{display:flex;align-items:center;justify-content:space-between;gap:20px}
+    .brand{display:flex;align-items:center;gap:12px}
+    .brand img{height:42px}
+    .btn{
+      padding:10px 16px;
+      border-radius:12px;
+      background:rgba(255,255,255,.08);
+      border:1px solid rgba(255,255,255,.15);
+      font-weight:700;
+      transition:.2s;
+    }
+    .btn:hover{background:rgba(255,255,255,.15)}
+    .btnPrimary{
+      background:linear-gradient(135deg,#9ae6b4,#60a5fa);
+      color:#000;
+      border:none;
+    }
+    .hero{padding:80px 0}
+    h1{font-size:48px;line-height:1.1;margin:0}
+    p{color:rgba(255,255,255,.75);line-height:1.6}
+    section{padding:60px 0;border-top:1px solid rgba(255,255,255,.08)}
+    .grid{display:grid;gap:20px}
+    .grid3{grid-template-columns:repeat(3,1fr)}
+    .card{
+      background:rgba(255,255,255,.06);
+      border:1px solid rgba(255,255,255,.1);
+      border-radius:20px;
+      padding:22px;
+    }
+    footer{padding:40px 0;border-top:1px solid rgba(255,255,255,.08)}
+    @media(max-width:900px){
+      h1{font-size:36px}
+      .grid3{grid-template-columns:1fr}
+    }
+  </style>
+</head>
+
+<body>
+
+<header>
+  <div class="wrap nav">
+    <div class="brand">
+      <img src="/assets/logo.png" alt="Abracadabra">
+      <strong>Abracadabra</strong>
+    </div>
+    <a class="btn btnPrimary" href="#contato">Começar</a>
+  </div>
+</header>
+
+<main>
+
+<section class="hero">
+  <div class="wrap">
+    <h1>Serviços digitais que funcionam como mágica.</h1>
+    <p>
+      Automação, SaaS e ferramentas web para ganhar tempo, reduzir trabalho manual
+      e transformar processos em resultados reais.
+    </p>
+    <div style="margin-top:20px">
+      <a class="btn btnPrimary" href="#servicos">Ver serviços</a>
+      <a class="btn" href="#contato">Falar no WhatsApp</a>
+    </div>
+  </div>
+</section>
+
+<section id="servicos">
+  <div class="wrap grid grid3">
+    <div class="card">
+      <h3>Abracadabra Auto</h3>
+      <p>Automações web rápidas e práticas para rotinas repetitivas.</p>
+    </div>
+    <div class="card">
+      <h3>Abracadabra Pages</h3>
+      <p>Páginas simples e rápidas para vendas e captura de leads.</p>
+    </div>
+    <div class="card">
+      <h3>Abracadabra Forms</h3>
+      <p>Formulários inteligentes com lógica e automação.</p>
+    </div>
+  </div>
+</section>
+
+<section id="contato">
+  <div class="wrap grid grid3">
+    <div class="card">
+      <h3>WhatsApp</h3>
+      <p>Atendimento direto e rápido.</p>
+      <a class="btn btnPrimary" target="_blank"
+         href="https://wa.me/5592993515959">
+        Chamar no WhatsApp
+      </a>
+    </div>
+
+    <div class="card">
+      <h3>E-mail</h3>
+      <p>Contato oficial:</p>
+      <strong>contato@abracadabra.com.br</strong>
+    </div>
+
+    <div class="card">
+      <h3>Domínio</h3>
+      <p>Plataforma oficial:</p>
+      <strong>abracadabra.srv.br</strong>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<footer>
+  <div class="wrap">
+    <p>© <span id="year"></span> Abracadabra — Serviços digitais que funcionam como mágica.</p>
+  </div>
+</footer>
+
+<script>
+  document.getElementById("year").textContent = new Date().getFullYear();
+</script>
+
+</body>
+</html>
